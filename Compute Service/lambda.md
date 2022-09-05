@@ -2,7 +2,7 @@
 
 > AWS Lambda lets you run code as functions without provisioning or managing servers.
 
-##Features
+## Features
 1. Run *on-demand* and limited by time - *short execution*
 2. Lambda-based applications are composed of functions triggered by *events*.
 3. Scaling is automated.
@@ -48,7 +48,7 @@ you do not wait for a response from the function code. Lambda attempts to retry 
 • AWS IoT
 • AWS IoT Events
 
-####b)  Event source mapping  (polled/read from the source) -
+#### b)  Event source mapping  (polled/read from the source) -
 An event source is an AWS service or developer-created application that produces events that trigger an AWS Lambda function to run. You can *use event source mappings to process items from a stream or queue in services that don’t invoke Lambda functions directly.*
 
 	
@@ -61,7 +61,7 @@ AWS services that Lambda reads events from -
 > The configuration of the event source mapping for stream-based services (DynamoDB, Kinesis), and Amazon SQS, is made on the Lambda side and it's a synchronous invocation.
 And for other services such as Amazon S3 and SNS, the function is invoked asynchronously, and the configuration is made on the source (S3/SNS) rather than Lambda.
 
-##Lambda versions
+## Lambda versions
 When we’re ready to publish a Lambda function, we create a  version with an unique ARN (Amazon Resource Name).
 - versions are numbered and starts with 1 and subsequent versions are incremented by 1.
 - versions are immutable.
