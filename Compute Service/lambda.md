@@ -69,3 +69,12 @@ When we’re ready to publish a Lambda function, we create a  version with an un
 - we work on $LATEST version and it's mutable.
 
 > Because different versions have unique ARNs this allows us to effectively manage them for different environments like Production, Staging or Development. 
+
+## Lambda Aliases
+Lambda aliases are *pointers* to a specific Lambda version.
+- We can enable Blue / Green deployment by creating a dev, test, prod aliases and have them point at different lambda versions with different weights .
+- They are mutable and have own ARN.
+- Aliases enable stable configuration of event triggers / destinations.
+- Aliases cannot reference aliases.
+
+## Trafic shifting
